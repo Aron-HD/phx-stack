@@ -31,6 +31,15 @@ defmodule PhxStackWeb.Router do
   end
 ```
 
+## Tailwind
+
+[tailwindcss docs](https://tailwindcss.com/docs/guides/phoenix)
+
+```elixir
+# apps/phx_stack_web/mix.exs
+{:tailwind, "~> 0.1", runtime: Mix.env() == :dev}
+```
+
 ## CORS
 
 - add cors to web dependencies `{:cors_plug, "~> 3.0"}`

@@ -27,7 +27,8 @@ config :phx_stack_web, PhxStackWeb.Endpoint,
   secret_key_base: "g5wWaDGN+DwP7XkQWd8OLytEtrzWvSojPsKX/pCyO/xJ5HXXnGZTgPoSv5SUJ5AQ",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
+    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
   ]
 
 # ## SSL Support
